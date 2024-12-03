@@ -1,0 +1,21 @@
+body{
+    background-image: url("imagenes/elmaestromain.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+header{
+    font-family:tahoma;
+    font-size: 35px;
+    font:orange;
+    font-style:bold;
+    text-align:right;
+    position: relative; top: 370px; right: 150px;
+}
+footer{
+    font-family:tahoma;
+    font-size: 18px;
+    font:orange;
+    font-style:oblique;
+    text-align:center;
+    position: relative; top: 550px;
+}
