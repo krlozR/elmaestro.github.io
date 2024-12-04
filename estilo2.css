@@ -1,28 +1,33 @@
-headerx{
-    background-imagex: url("imagenes/main1.png");
-    background-sizex: cover;
-    background-repeatx: repeat-y;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
-header{
-    font-family:tahoma;
-    font-size: 35px;
-    font: #f68b1c;
-    font-style:bold;
-    text-alignx:left;
-    positionx: relative; top: 1x; left: 1px;
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-footer{
-    font-family:tahoma;
-    font-size: 18px;
-    font: #f68b1c;
-    font-style:oblique;
-    text-align:center;
-    position: relative; top: 550px;
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 10px);
+    overflow: hidden;
+    position: relative;
 }
-footer1{
-    background-imagex: url("imagenes/main2.png");
-    background-sizex: cover;
-    background-repeatx: repeat-y;
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
 }
 .btn-flotante {
     font-size: 16px;
@@ -64,7 +69,7 @@ footer1{
     padding: 18px 30px;
     position: fixed;
     bottom: 40px;
-    right: 40px;
+    right: 97px;
     transition: all 300ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     z-index: 99;
@@ -101,7 +106,7 @@ footer1{
 }
 
 .btn-flotante2:hover {
-    background-color: #2d3a62;
+    background-color: ;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-7px);
 }
@@ -113,4 +118,25 @@ footer1{
         bottom: 20px;
         right: 20px;
     }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-color: #2d3a62;
+    color: #f68b1c;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
 }
