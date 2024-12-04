@@ -1,15 +1,19 @@
-headerx{
+/* headerx{
     background-imagex: url("imagenes/main1.png");
     background-sizex: cover;
     background-repeatx: repeat-y;
-}
+} */
+.imagen{
+    max-width: auto;
+    height: auto;
+    }
 header{
     font-family:tahoma;
     font-size: 35px;
     font: #f68b1c;
     font-style:bold;
-    text-alignx:left;
-    positionx: relative; top: 1x; left: 1px;
+    /* text-alignx:left;
+    positionx: relative; top: 1x; left: 1px; */
 }
 footer{
     font-family:tahoma;
@@ -19,11 +23,11 @@ footer{
     text-align:center;
     position: relative; top: 550px;
 }
-footer1{
+/* footer1{
     background-imagex: url("imagenes/main2.png");
     background-sizex: cover;
     background-repeatx: repeat-y;
-}
+} */
 .btn-flotante {
     font-size: 16px;
     text-transform: uppercase;
@@ -114,3 +118,26 @@ footer1{
         right: 20px;
     }
 }
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+        table, p, img {
+        padding-right: 1em;
+        width: 100%;
+        }
+     }
+    @media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */ 
+    }
+    @media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+    }
+    @media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    }
+    @media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */ 
+    }
+    @media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    }
+    
